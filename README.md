@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="public/assets/logo.jpg" alt="ABT Foundation Logo" width="120" height="120" style="border-radius: 50%;" />
+<img width="190" height="200" alt="logo" src="https://github.com/user-attachments/assets/d8ab12f1-7f20-4393-afc8-7cf46457204a" />
+
 
 # A Better Tomorrow (ABT) Foundation
 
