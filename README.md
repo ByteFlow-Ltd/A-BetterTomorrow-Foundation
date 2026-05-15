@@ -154,7 +154,7 @@ Please make sure your code is clean, well-commented, and follows the existing co
 ABT Foundation's work is powered by the generosity of people like you.
 
 - 🌐 **Website:** [a-better-tomorrow-foundation-org.vercel.app](https://a-better-tomorrow-foundation-org.vercel.app/)
-- 📧 **Email:** contact@abtfoundation.org
+- 📧 **Email:** abettertomorrowf@gmail.com
 - 📍 **Location:** Kigali, Rwanda
 
 > *Every donation, every share, every volunteer hour — it all adds up to a better tomorrow.*
