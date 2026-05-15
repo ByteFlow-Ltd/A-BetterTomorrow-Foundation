@@ -1,0 +1,338 @@
+/* LandingPage.css - ABT Foundation Full Professional Style */
+
+@import url('https://googleapis.com');
+
+:root {
+    --abt-green: #064e3b;      /* Deep Forest Green */
+    --abt-accent: #10b981;     /* Emerald Green */
+    --abt-dark: #022c22;       /* Near Black Green */
+    --abt-soft: #f0fdf4;       /* Soft Mint Background */
+    --abt-white: #ffffff;
+    --abt-text: #1f2937;
+    --abt-muted: #6b7280;
+    --abt-border: #e5e7eb;
+    --abt-shadow: 0 20px 40px -15px rgba(6, 78, 59, 0.1);
+}
+
+.landing-master {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--abt-text);
+    background-color: var(--abt-white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* --- 1. PREMIUM HERO SECTION --- */
+.hero-modern-pro {
+    position: relative;
+    padding: 160px 0 100px;
+    background: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(6, 78, 59, 0.05) 0%, transparent 40%);
+    text-align: center;
+}
+
+.pro-badge {
+    background: var(--abt-soft);
+    color: var(--abt-green);
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border: 1px solid var(--abt-accent);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.hero-modern-pro h1 {
+    font-size: clamp(2.8rem, 8vw, 4.8rem);
+    font-weight: 800;
+    color: var(--abt-dark);
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-modern-pro h1 span {
+    color: var(--abt-accent);
+}
+
+.hero-lead {
+    font-size: 1.3rem;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    color: var(--abt-muted);
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-impact {
+    background: var(--abt-green);
+    color: white;
+    padding: 20px 45px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s ease;
+}
+
+.btn-impact:hover {
+    background: var(--abt-accent);
+    transform: translateY(-5px);
+}
+
+.btn-outline {
+    border: 2px solid var(--abt-green);
+    color: var(--abt-green);
+    padding: 20px 45px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+/* --- 2. ACCOUNTABILITY BAR --- */
+.accountability-bar {
+    background: white;
+    padding: 40px 0;
+    border-top: 1px solid var(--abt-border);
+    border-bottom: 1px solid var(--abt-border);
+}
+
+.acc-grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.acc-item {
+    text-align: center;
+}
+
+.acc-num {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--abt-green);
+}
+
+.acc-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--abt-muted);
+    letter-spacing: 1px;
+}
+
+/* --- 3. CORE STRATEGIC PILLARS --- */
+.strategy-pillars {
+    padding: 120px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.tag {
+    color: var(--abt-accent);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--abt-green);
+    margin-top: 15px;
+}
+
+.pillars-pro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.p-glass-card {
+    background: white;
+    padding: 50px 35px;
+    border-radius: 28px;
+    border: 1px solid var(--abt-border);
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+.p-glass-card:hover {
+    border-color: var(--abt-accent);
+    transform: translateY(-12px);
+    box-shadow: var(--abt-shadow);
+}
+
+.p-pro-icon {
+    font-size: 3rem;
+    color: var(--abt-accent);
+    margin-bottom: 30px;
+}
+
+.p-glass-card h4 {
+    font-size: 1.4rem;
+    color: var(--abt-green);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* --- 4. FOUNDING CREDO --- */
+.founding-credo {
+    padding: 120px 0;
+    background: var(--abt-soft);
+}
+
+.grid-2-pro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.credo-text h3 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: var(--abt-green);
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.credo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.credo-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--abt-text);
+}
+
+.credo-list svg {
+    color: var(--abt-accent);
+}
+
+.credo-visual {
+    position: relative;
+}
+
+.impact-circle {
+    width: 280px;
+    height: 280px;
+    background: var(--abt-green);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+    box-shadow: 0 30px 60px rgba(6, 78, 59, 0.2);
+}
+
+.big-num {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* --- 5. CALL TO ACTION (CTA) --- */
+.pro-cta-banner {
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.q-icon-pro {
+    font-size: 4rem;
+    color: var(--abt-accent);
+    opacity: 0.15;
+    margin-bottom: 40px;
+}
+
+.pro-cta-banner h2 {
+    font-size: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    color: var(--abt-green);
+    font-weight: 800;
+}
+
+.cta-btns-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.btn-dark-pro {
+    background: var(--abt-dark);
+    color: white;
+    padding: 20px 50px;
+    border-radius: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-link-pro {
+    color: var(--abt-green);
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .grid-2-pro {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .acc-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .hero-actions, .cta-btns-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-modern-pro h1 {
+        font-size: 2.8rem;
+    }
+}

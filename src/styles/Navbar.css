@@ -1,0 +1,228 @@
+/* Modern Font */
+@import url('https://googleapis.com');
+
+:root {
+    --primary-green: #065f46;  /* Deep Emerald Green - Icyatsi cyijimye cyane */
+    --accent-green: #10b981;   /* Vibrant Green - Icyatsi gishashana */
+    --dark-text: #0f172a;      /* Navy Black - Umukara usomeka neza */
+    --white: #ffffff;
+    --gray-light: #f8fafc;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98.9%;
+    z-index: 2000;
+    background: var(--white); /* Iteka igomba kuba yera kugira ngo text zigaragare */
+    padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: var(--transition);
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+/* --- LOGO SECTION --- */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 48px;
+    width: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--primary-green);
+    margin: 0;
+    letter-spacing: -0.5px;
+    line-height: 1;
+}
+
+.brand-slogan {
+    font-size: 0.65rem;
+    color: #64748b; /* Gray ryijimye risomeka neza */
+    font-weight: 600;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+/* --- NAV LINKS --- */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links li a, .dropdown-trigger {
+    text-decoration: none;
+    color: var(--dark-text) !important; /* Text zose zibe umukara hano */
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.nav-links li a:hover, .dropdown-trigger:hover {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--primary-green) !important;
+}
+
+/* Active Page Style */
+.active-nav {
+    color: var(--primary-green) !important;
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.n-icon {
+    font-size: 1.1rem;
+    color: var(--primary-green);
+}
+
+/* --- DROPDOWN --- */
+.nav-item-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 200px;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 1px solid #edf2f7;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition);
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--primary-green);
+    color: var(--white) !important;
+}
+
+/* --- DONATE BUTTON (GREEN) --- */
+.nav-donate-btn {
+    background: var(--primary-green);
+    color: var(--white) !important;
+    padding: 10px 24px !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    margin-left: 10px;
+    box-shadow: 0 4px 12px rgba(6, 95, 70, 0.2);
+}
+
+.nav-donate-btn:hover {
+    background: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+/* --- MOBILE TOGGLE --- */
+.mobile-toggle {
+    display: none;
+    background: #f1f5f9;
+    border: none;
+    color: var(--primary-green);
+    font-size: 1.4rem;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 1024px) {
+    .mobile-toggle {
+        display: block;
+    }
+.navbar{
+ width: 98.2%;
+}
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 80%;
+        max-width: 320px;
+        background: var(--white);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 80px 24px;
+        box-shadow: -10px 0 50px rgba(0,0,0,0.1);
+        transition: 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        display: none;
+        background: var(--gray-light);
+        margin: 10px 0;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+    .nav-donate-btn {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+}

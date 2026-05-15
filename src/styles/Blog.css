@@ -1,0 +1,181 @@
+/* Blog.css - Professional Clean Design */
+
+:root {
+    --abt-green: #064e3b;
+    --abt-accent: #10b981;
+    --abt-soft: #f0fdf4;
+    --abt-text: #1f2937;
+    --abt-muted: #6b7280;
+}
+
+.blog-master {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #fcfdfc;
+}
+
+/* HERO SECTION */
+.blog-hero-pro {
+    background: linear-gradient(135deg, var(--abt-green) 0%, #022c22 100%);
+    padding: 120px 20px 80px;
+    text-align: center;
+    color: white;
+}
+
+.b-label {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--abt-accent);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.blog-hero-pro h1 {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.blog-hero-pro h1 span { color: var(--abt-accent); }
+
+.b-search-wrap {
+    max-width: 500px;
+    margin: 40px auto 0;
+    position: relative;
+}
+
+.b-search-wrap input {
+    width: 100%;
+    padding: 16px 20px 16px 50px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.s-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--abt-muted);
+}
+
+/* QUOTE CARDS */
+.b-main-grid { padding: 80px 20px; }
+
+.quote-grid-pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.quote-card-pro {
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    border: 1px solid #f1f5f9;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote-card-pro:hover {
+    transform: translateY(-10px);
+    border-color: var(--abt-accent);
+    box-shadow: 0 20px 40px rgba(6, 78, 59, 0.05);
+}
+
+.q-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.q-cat {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.q-cat.healing { background: #e0f2fe; color: #0369a1; }
+.q-cat.inspiration { background: #fef3c7; color: #b45309; }
+.q-cat.vision { background: #dcfce7; color: #15803d; }
+
+.q-icon-bg {
+    font-size: 2.5rem;
+    color: var(--abt-accent);
+    opacity: 0.1;
+    margin-bottom: -20px;
+}
+
+.quote-card-pro h3 {
+    color: var(--abt-green);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.quote-card-pro p {
+    font-style: italic;
+    color: var(--abt-text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.q-divider {
+    height: 1px;
+    background: #f1f5f9;
+    margin: 20px 0;
+}
+
+.q-author {
+    font-weight: 700;
+    color: var(--abt-muted);
+    font-size: 0.85rem;
+}
+
+.q-read-btn {
+    margin-top: 25px;
+    background: transparent;
+    border: none;
+    color: var(--abt-accent);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* FOOTER CTA */
+.b-footer-cta {
+    background: #f8fafc;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-icon-large {
+    font-size: 4rem;
+    color: var(--abt-green);
+    margin-bottom: 20px;
+}
+
+.btn-contact-pro {
+    background: var(--abt-green);
+    color: white;
+    padding: 16px 35px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 800;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .blog-hero-pro h1 { font-size: 2.5rem; }
+    .quote-grid-pro { grid-template-columns: 1fr; }
+}

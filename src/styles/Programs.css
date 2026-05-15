@@ -1,0 +1,202 @@
+/* Programs.css - High-End Corporate NGO Style */
+
+:root {
+    --abt-green: #064e3b;
+    --abt-accent: #10b981;
+    --abt-soft: #f0fdf4;
+    --abt-text: #374151;
+    --abt-muted: #6b7280;
+    --transition: all 0.3s ease;
+}
+
+.programs-page-pro {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #ffffff;
+}
+
+.pro-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* HERO SECTION */
+.programs-hero-clean {
+    background: linear-gradient(135deg, var(--abt-green) 0%, #022c22 100%);
+    padding: 120px 20px 100px;
+    text-align: center;
+    color: white;
+}
+
+.pro-label {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--abt-accent);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.programs-hero-clean h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.programs-hero-clean h1 span { color: var(--abt-accent); }
+
+/* PROGRAM ROWS */
+.program-row { padding: 100px 0; }
+.alt-bg { background-color: #f8fafc; }
+
+.program-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.program-grid.reversed {
+    grid-template-columns: 0.8fr 1.2fr;
+}
+
+.program-grid.reversed .program-info { order: 2; }
+
+/* PROGRAM CONTENT */
+.p-icon-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.main-icon {
+    font-size: 2.2rem;
+    color: var(--abt-accent);
+}
+
+.p-category {
+    font-weight: 800;
+    color: var(--abt-accent);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.program-info h2 {
+    font-size: 2.5rem;
+    color: var(--abt-green);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.program-info h2 span { font-weight: 400; color: var(--abt-muted); }
+
+.p-lead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--abt-text);
+    margin-bottom: 15px;
+}
+
+.p-body {
+    color: var(--abt-muted);
+    margin-bottom: 30px;
+}
+
+.p-features {
+    list-style: none;
+    padding: 0;
+}
+
+.p-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--abt-text);
+}
+
+.p-features svg { color: var(--abt-accent); }
+
+/* STAT CIRCLES & BOXES */
+.stat-circle {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #e2e8f0;
+    border-top-color: var(--abt-accent);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.stat-circle.accent { border-top-color: var(--abt-green); }
+
+.stat-circle h4 { font-size: 2.5rem; color: var(--abt-green); margin: 0; }
+.stat-circle span { font-size: 0.7rem; font-weight: 800; color: var(--abt-muted); text-align: center; }
+
+.vision-box-pro {
+    background: var(--abt-green);
+    padding: 40px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+.glass-icon-card {
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.large-icon { font-size: 4rem; color: var(--abt-accent); margin-bottom: 15px; }
+
+/* FINAL CTA */
+.programs-cta {
+    padding: 100px 0;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.cta-flex-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.btn-main-dark {
+    background: var(--abt-green);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 12px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-accent-pro {
+    background: var(--abt-accent);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 12px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .program-grid, .program-grid.reversed { grid-template-columns: 1fr; text-align: center; }
+    .p-icon-header { justify-content: center; }
+    .cta-flex-btns { flex-direction: column; }
+    .program-info { order: 1 !important; }
+}

@@ -1,0 +1,117 @@
+/* PrivacyPolicy.css - ABT Corporate Style */
+
+:root {
+    --abt-green: #064e3b;
+    --abt-accent: #10b981;
+    --abt-soft: #f0fdf4;
+    --abt-text: #374151;
+    --abt-muted: #6b7280;
+}
+
+.privacy-master {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+/* HERO */
+.privacy-hero-pro {
+    background: linear-gradient(135deg, var(--abt-green) 0%, #022c22 100%);
+    padding: 120px 20px 80px;
+    text-align: center;
+    color: white;
+}
+
+.pro-label {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--abt-accent);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.privacy-hero-pro h1 { font-size: 3rem; margin: 20px 0; font-weight: 800; }
+.privacy-hero-pro h1 span { color: var(--abt-accent); }
+
+/* CONTENT */
+.privacy-content { padding: 80px 25px; max-width: 900px; margin: 0 auto; }
+
+.effective-date {
+    background: var(--abt-soft);
+    color: var(--abt-green);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.p-section-pro { margin-bottom: 60px; }
+
+.p-header-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: var(--abt-green);
+}
+
+.p-section-icon { font-size: 1.5rem; color: var(--abt-accent); }
+
+.p-section-pro h2 { font-size: 1.6rem; font-weight: 800; margin: 0; }
+
+.intro-text { font-size: 1.25rem; line-height: 1.7; color: var(--abt-text); }
+
+/* GRID CARDS */
+.p-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.p-info-card-pro {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 4px solid var(--abt-accent);
+}
+
+.p-info-card-pro h4 { color: var(--abt-green); margin-bottom: 12px; font-size: 1.1rem; }
+.p-info-card-pro p { font-size: 0.9rem; color: var(--abt-muted); margin: 0; line-height: 1.6; }
+
+/* LIST */
+.p-list-pro { list-style: none; padding: 0; }
+.p-list-pro li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+    color: var(--abt-text);
+}
+
+.p-list-pro li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--abt-accent);
+    font-weight: 800;
+}
+
+/* CONTACT BOX */
+.contact-legal-box {
+    background: var(--abt-green);
+    color: white;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.contact-legal-box h3 { font-size: 1.5rem; margin-bottom: 15px; }
+.legal-contact-info { opacity: 0.9; font-size: 0.95rem; }
+
+@media (max-width: 768px) {
+    .privacy-hero-pro h1 { font-size: 2.2rem; }
+    .p-card-grid { grid-template-columns: 1fr; }
+}

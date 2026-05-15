@@ -1,0 +1,113 @@
+/* TermsOfService.css - ABT Foundation Legal Theme */
+
+:root {
+    --abt-green: #064e3b;
+    --abt-accent: #10b981;
+    --abt-soft: #f0fdf4;
+    --abt-text: #374151;
+    --abt-muted: #6b7280;
+}
+
+.terms-master {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+/* HERO */
+.terms-hero-pro {
+    background: linear-gradient(135deg, var(--abt-green) 0%, #022c22 100%);
+    padding: 120px 20px 80px;
+    text-align: center;
+    color: white;
+}
+
+.pro-label {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--abt-accent);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.terms-hero-pro h1 { font-size: 3rem; margin: 20px 0; font-weight: 800; }
+.terms-hero-pro h1 span { color: var(--abt-accent); }
+
+/* CONTENT */
+.terms-content { padding: 80px 25px; max-width: 900px; margin: 0 auto; }
+
+.update-tag {
+    background: var(--abt-soft);
+    color: var(--abt-green);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.terms-section-pro { margin-bottom: 50px; }
+
+.t-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--abt-green);
+}
+
+.t-icon { font-size: 1.4rem; color: var(--abt-accent); }
+
+.terms-section-pro h2 { font-size: 1.5rem; font-weight: 800; margin: 0; }
+.terms-section-pro p { color: var(--abt-text); line-height: 1.8; font-size: 1.05rem; }
+
+/* GRID CARDS */
+.terms-grid-pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.terms-card-pro {
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #f1f5f9;
+    transition: 0.3s;
+}
+
+.terms-card-pro:hover { border-color: var(--abt-accent); transform: translateY(-5px); }
+
+.tc-icon-pro { font-size: 2.5rem; color: var(--abt-accent); margin-bottom: 20px; }
+
+.terms-card-pro h4 { color: var(--abt-green); margin-bottom: 15px; font-size: 1.2rem; }
+.terms-card-pro p { font-size: 0.95rem; color: var(--abt-muted); margin: 0; }
+
+/* WARNING BOX */
+.warning-box-pro {
+    background: #fffbeb;
+    border-left: 5px solid #f59e0b;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.w-icon-pro { color: #f59e0b; font-size: 1.5rem; }
+
+/* FOOTER */
+.terms-footer-contact {
+    margin-top: 80px;
+    padding: 40px;
+    background: #f1f5f9;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.gavel-icon-pro { font-size: 3rem; color: var(--abt-green); margin-bottom: 20px; opacity: 0.3; }
+
+@media (max-width: 768px) {
+    .terms-hero-pro h1 { font-size: 2.2rem; }
+    .terms-grid-pro { grid-template-columns: 1fr; }
+}
